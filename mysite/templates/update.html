@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>update</title>
+</head>
+<body>
+
+<form action="" method="post">
+
+    {% csrf_token %}
+
+    <label>first</label>
+    <input name="first" value="{{ data.fname }}"><br>
+
+    <label>second</label>
+    <input name="second" value="{{ data.lname }}"><br>
+
+    <input type="submit" value="submit">
+
+</form>
+</body>
+</html>
